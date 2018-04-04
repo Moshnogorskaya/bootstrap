@@ -7,13 +7,41 @@ body {
 }
 
 html {
-  font-size: 0.8rem;
+  font-size: 12px;
 }
 
-@include media-breakpoint-up(xs) {
+@media screen and (min-width: 576px) {
+
   html {
-    font-size: 1rem;
+    font-size: 16px;
   }
+
+.client-images a {
+  display: block;
+  margin: 0 auto;
+}
+
+.client-images li:nth-child(1) a {
+  padding-top: 100% !important;
+}
+
+.client-images li:nth-child(2) a {
+  padding-top: 100% !important;
+}
+
+.client-images li:nth-child(3) a {
+  padding-top: 100% !important;
+}
+
+.client-images li:nth-child(4) a {
+  padding-top: 100% !important;
+}
+
+.client-images li:nth-child(5) a {
+  padding-top: 100% !important;
+}
+
+
 }
 
 .container {
@@ -33,7 +61,7 @@ html {
 
 .logo {
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 .logo-rectangle {
@@ -50,8 +78,8 @@ html {
   left: 22px;
   background: white;
   font-weight: bold;
-  font-size: 1.7rem;
-  line-height: 1.9rem;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
 }
 
 .search {
@@ -62,6 +90,8 @@ html {
 .search .input-group {
     border: 1px solid #6D3D99;
     margin-bottom: 1rem;
+    margin-left: 0.3rem !important;
+    width: 100% !important;
  }
 
 .search .input-group-btn {
@@ -86,13 +116,15 @@ html {
     box-shadow: none !important;
 }
 
+
+
 /* -------------------menu ----------------------------------*/
 
 .navbar {
   margin: 0 -15px 0.5rem -15px;
   padding-left: 0 !important;
   padding-right: 0 !important;
-  font-size: 1rem;
+  font-size: 0.875rem;
   white-space: nowrap;
   text-align: center;
 }
@@ -103,24 +135,41 @@ html {
 
 .nav-item {
   padding: 0 !important;
-  min-height: 37px !important;
+  min-height: 3rem !important;
 }
 
 .nav-link {
-  color: black;
-  height: 3.5rem;
-  line-height: 2.7rem;
+  color: black !important;
+  height: 3rem;
+  line-height: 2rem;
 }
 
 .nav-item.active .nav-link{
   background: #FFC740;
-  color: white;
+  color: white !important;
 }
 
 .nav-link:hover {
   background: #FFC740;
   color: black;
 }
+
+
+button.navbar-toggler {
+  border: 3px solid #FFC740 !important;
+  border-radius: 0 !important;
+  margin-bottom: 0.5rem;
+  width: 50px;
+  height: 48px;
+  padding: 0;
+}
+
+button.navbar-toggler:focus {
+  border: 3px solid #FFC740 !important;
+    outline: 0 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+} 
 
 /* ------------------- big image---------------------------------*/
 
@@ -138,16 +187,16 @@ html {
   color: white;
   padding: 1.5rem;
   font-weight: 100;
-  font-size: 1.1rem;
+  font-size: 0.875rem;
   letter-spacing: -0.03rem
 }
 
 .big-image-text h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: normal;
   color: #FFC740;
   font-weight: 300;
-  letter-spacing: 0.1rem
+  letter-spacing: 0.1rem;
 }
 
 .big-image-text .btn-info {
@@ -160,8 +209,8 @@ html {
 
 .heading {
   background: #9B51E0;
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   margin-bottom: 1rem;
   margin-top: 2rem !important;
   padding-left: 1.6rem !important;
@@ -175,7 +224,8 @@ html {
 }
 
 .post-text {
-  line-height: 1.3rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
   text-align: justify;
   padding-right: 0 !important;
 }
@@ -284,52 +334,53 @@ html {
 .client-images a {
   display: block;
   margin: 0 auto;
+  
 }
 
 .client-images li:nth-child(1) a {
   background: url("https://s3-alpha.figma.com/img/485e/67c9/970732fd3a404f5f29a19596a667236b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJK6APQGEHTP6I3PA%2F20180328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180328T134826Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=e87cebb40168caa445a482e4e3baa47e161b4920c1695536a1601350518ea99a") center no-repeat;
   background-size: contain;
   width: 70%;
-  padding-top: 100%;
+  padding-top: 30%;
 }
 
 .client-images li:nth-child(2) a {
   background: url("https://s3-alpha.figma.com/img/f6f3/150d/a2cd775dea45593bff9861a4ff221c93?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJK6APQGEHTP6I3PA%2F20180328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180328T135333Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=2d9413bbcbae68cb13bd4c3cbec0ad942093c80a19030464522a7eb9e143406b") center no-repeat;
  background-size: contain;
 width: 70%;
-  padding-top: 100%;
+  padding-top: 30%;
 }
 
 .client-images li:nth-child(3) a {
- background: url("https://s3-alpha.figma.com/img/7c87/0321/0b43c4cfa1519dd01d96146bde7d46e8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJK6APQGEHTP6I3PA%2F20180328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180328T135410Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=4e49c96e278c3c0072b3c1eef9f4263994ae3af239b9fc28d8e2100c3f7948c1") center no-repeat;
+ background: url("https://s3-alpha.figma.com/img/7c87/0321/0b43c4cfa1519dd01d96146bde7d46e8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJK6APQGEHTP6I3PA%2F20180328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180328T135410Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=4e49c96e278c3c0072b3c1eef9f4263994ae3af239b9fc28d8e2100c3f7948c1") 30% 50% no-repeat;
  background-size: contain;
 width: 130%;
-  padding-top: 100%;
+  padding-top: 30%;
 }
 
 .client-images li:nth-child(4) a {
   background: url("https://s3-alpha.figma.com/img/ad52/d1a3/2cd1b02c3ba5558a6bc24e5a0e95bfbc?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJK6APQGEHTP6I3PA%2F20180328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180328T135435Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=5bdbdaf454baa8565fb68510d3040344aed89e7ce7b6d28482e0692f862ce683") center no-repeat;
   background-size: contain;
 width: 100%;
-  padding-top: 100%;
+  padding-top: 30%;
 }
 
 .client-images li:nth-child(5) a {
   background: url("https://s3-alpha.figma.com/img/4922/f02b/482433322c61675a9780b9999a2c64a4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJK6APQGEHTP6I3PA%2F20180328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180328T135500Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=b05b51521c23dcdd3ad2a4c42163a40760dca3704d1809110c837d667eafb93b") 50% 30% no-repeat;
 background-size: contain;
 width: 100%;
-  padding-top: 100%;
+  padding-top: 30%;
 }
 
 
 /*------------------------footer----------------------------------*/
 
 .footer {
+  margin-top: 1rem;
   height: 115px;
   background: #6D3D99;
   font-size: 0.875rem;
   color: white;
-  font-weight: bold;
   line-height: 115px;
 }
 
